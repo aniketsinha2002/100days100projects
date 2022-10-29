@@ -24,13 +24,12 @@
     } */
     .clock-body{
         height: auto;
-        width: 700px;
+        width: 650px;
         padding: 40px 40px 40px 40px;
-        margin-top: 190px;
+        margin-top: 200px;
         margin-left: 450px;
         position:absolute;
-        font-size:50px;
-        text-align: left;
+        font-size: 3.125rem;
         border-radius: 20px;
         box-shadow: -10px -10px 8px rgb(252, 252, 252),7px 7px 8px rgba(0, 0, 0, 0.599);
         
@@ -41,11 +40,16 @@
         transition: 0.8s ease;
     }
     .container1{
+        text-align: left;
         padding: 10px;
     }
+    .container2
+    {
+        text-align: left;
+    }
     #time,#date{
-       font-size: larger;
-       text-align: left;
+       /* font-size: larger; */
+       text-align: center;
     }
 
     .love{
@@ -53,17 +57,68 @@
         padding-bottom: 0px;
         text-align: center;
     }
+
+    @media(max-width:250px){
+      .clock-body
+       { 
+        margin-top: 150px;
+        margin-left: 0px;
+        width: 450px;
+        text-align: left;
+       }
+    }
+
+     @media(min-width:251px) and (max-width:450px){
+      .clock-body
+       { 
+        margin-top: 210px;
+        margin-left: 0px;
+        width: 500px;
+        text-align: left;
+       }
+    }
+
+    @media(min-width:451px) and (max-width:800px){
+      .clock-body
+       { 
+        margin-top: 220px;
+        margin-left: 0px;
+        width: 600px;
+        text-align: left;
+       }
+    }
+
+   @media(min-width:801px) and (max-width:1000px){
+      .clock-body
+       { 
+        margin-top: 220px;
+        margin-left: 50px;
+        width: 650px;
+        text-align: left;
+       }
+    }
+
+     @media(min-width:1001px) and (max-width:1500px){
+      .clock-body
+       { 
+        margin-top: 220px;
+        margin-left: 15%;
+        width: 650px;
+        text-align: left;
+       }
+    }
+
 </style>
 
 <body>
 
     <div class="clock-body">
         <div class="container1">
-            <h1>Current Time is : <b style="font-family: 'Orbitron', sans-serif" id="time"></b></h1>
+            <h1>Current Time is :&nbsp; <b style="font-family: 'Orbitron', sans-serif" id="time"></b></h1>
         </div>
 
         <div class="container2">
-            <h1><b id="date"></b> </h1>
+            <h1>&nbsp;<b style="text-align: center" id="date"></b> </h1>
         </div>
 
         <h6 class="love">Made with ❤ by <a href="https://github.com/aniketsinha2002">Aniket</a> - 100days100project</h6>
