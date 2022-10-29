@@ -17,16 +17,16 @@
         background-color: rgb(249, 240, 240);
     }
 
-    @font-face
+    /* @font-face
     {
         font-family:'digital-clock-font';
         src: url('put_the_location_to_your_font.ttf or .otf');
-    }
+    } */
     .clock-body{
         height: auto;
-        width: 680px;
+        width: 700px;
         padding: 40px 40px 40px 40px;
-        margin-top: 200px;
+        margin-top: 190px;
         margin-left: 450px;
         position:absolute;
         font-size:50px;
@@ -63,7 +63,7 @@
         </div>
 
         <div class="container2">
-            <h1>Today's Date is : <b id="date"></b> </h1>
+            <h1><b id="date"></b> </h1>
         </div>
 
         <h6 class="love">Made with ❤ by <a href="https://github.com/aniketsinha2002">Aniket</a> - 100days100project</h6>
@@ -80,12 +80,13 @@
     let date;
     let time;
     let a;
-    
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day:'numeric' };
+
     setInterval(() => {
 
     a = new Date();
 
-    date = a.toLocaleDateString();
+    date = a.toLocaleDateString(undefined,options);
     time = a.getHours() + ' : ' + a.getMinutes() + ' : ' + a.getSeconds();
 
     document.getElementById('time').innerHTML=time;
