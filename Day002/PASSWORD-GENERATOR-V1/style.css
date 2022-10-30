@@ -6,7 +6,7 @@
 
     /* @font-face
     {
-        font-family:'digital-clock-font';
+        font-family:'digital-password-font';
         src: url('put_the_location_to_your_font.ttf or .otf');
     } */
     .password-body{
@@ -69,7 +69,7 @@
     }
 
     @media(max-width:250px){
-      .clock-body
+      .password-body
        { 
         margin-top: 150px;
         margin-left: 0px;
@@ -79,7 +79,7 @@
     }
 
      @media(min-width:251px) and (max-width:450px){
-      .clock-body
+      .password-body
        { 
         margin-top: 210px;
         margin-left: 0px;
@@ -89,7 +89,7 @@
     }
 
     @media(min-width:451px) and (max-width:800px){
-      .clock-body
+      .password-body
        { 
         margin-top: 220px;
         margin-left: 0px;
@@ -99,7 +99,7 @@
     }
 
    @media(min-width:801px) and (max-width:1000px){
-      .clock-body
+      .password-body
        { 
         margin-top: 220px;
         margin-left: 50px;
@@ -109,7 +109,7 @@
     }
 
      @media(min-width:1001px) and (max-width:1500px){
-      .clock-body
+      .password-body
        { 
         margin-top: 220px;
         margin-left: 15%;
