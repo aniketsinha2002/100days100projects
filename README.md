@@ -10,4 +10,4 @@
 
 
 <br/>
-Show some ❤ by starring⭐ the repository.
+Show some ❤ by starring ⭐ this repository.
